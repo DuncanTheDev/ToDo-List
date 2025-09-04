@@ -1,0 +1,89 @@
+.todo-list {
+  width: 540px;
+  max-width: 540px;
+  background-color: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 40px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 23px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.task {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.add-button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  border-radius: 30px;
+  background-color: #ff5945;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-button:hover {
+  opacity: 0.9;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.unchecked {
+  width: 20px;
+}
+
+.remove {
+  width: 27px;
+  height: 27px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.remove:hover {
+  background-color: #ff5945;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #555;
+}
