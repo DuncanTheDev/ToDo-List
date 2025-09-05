@@ -3,11 +3,21 @@ import remove from "../assets/delete.png";
 import checked from "../assets/checked.png";
 import "./ToDo.css";
 
-export default function ToDoItem({ text, isCompleted, id, removeTodo, toggleComplete }) {
+export default function ToDoItem({
+  text,
+  isCompleted,
+  id,
+  removeTodo,
+  toggleComplete,
+}) {
   return (
     <div className="task-container">
       <div onClick={() => toggleComplete(id)} className="task-list">
-        <img  className="unchecked" src={isCompleted ? checked : unchecked} alt="" />
+        <img
+          className="unchecked"
+          src={isCompleted ? checked : unchecked}
+          alt=""
+        />
         <p className={isCompleted ? "completed" : ""}>{text}</p>
       </div>
       <img
